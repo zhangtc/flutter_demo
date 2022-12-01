@@ -6,15 +6,22 @@ import './tabs/user.dart';
 
 //有状态组件
 class Tabs extends StatefulWidget {
-  const Tabs({super.key});
+  final int index;
+  const Tabs({super.key, this.index = 0});
 
   @override
   State<Tabs> createState() => _MyStatefulWidgetState();
 }
 
 class _MyStatefulWidgetState extends State<Tabs> {
-  var index = 0;
+ late var index = 0;
   List<Widget> tabs = const [Home(), Category(), Settings(), User()];
+
+  @override
+  void initState() {
+    index = widget.index;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {

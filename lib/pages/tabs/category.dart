@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './search.dart';
+import '../search.dart';
 import '../form.dart';
 import '../news.dart';
 
@@ -37,23 +37,28 @@ class _CategoryState extends State<Category> {
         const SizedBox(
           height: 20,
         ),
-        ElevatedButton(onPressed: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (BuildContext context) {
-              return const FormPage();
-            })
-          );
-        }, child: const Text("From")),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (BuildContext context) {
+                return const FormPage();
+              }));
+            },
+            child: const Text("From")),
         const SizedBox(
           height: 20,
         ),
-        ElevatedButton(onPressed: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (BuildContext context) {
-              return const NewsPages(title: "最新新闻报道",aid: 12,);
-            })
-          );
-        }, child: const Text("News"))
+        ElevatedButton(
+            onPressed: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (BuildContext context) {
+                return  NewsPages(
+                  title: "最新新闻报道",
+                  arguments: const {"aid": 8899},
+                );
+              }));
+            },
+            child: const Text("News"))
       ],
     );
   }

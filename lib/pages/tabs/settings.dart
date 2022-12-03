@@ -33,7 +33,11 @@ class _SettingsState extends State<Settings> {
                       arguments: {"aid": 8888999});
                 },
                 child: const Text(news)),
-            
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, dialog);
+                },
+                child: const Text(dialog)),
           ],
         ),
       ),

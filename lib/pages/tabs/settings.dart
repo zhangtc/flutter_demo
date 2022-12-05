@@ -38,6 +38,31 @@ class _SettingsState extends State<Settings> {
                   Navigator.pushNamed(context, dialog);
                 },
                 child: const Text(dialog)),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, pageView);
+                },
+                child: const Text(pageView)),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed(pageViewBuild);
+                },
+                child: const Text(pageViewBuild)),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed(pageViewFullPage);
+                },
+                child: const Text(pageViewFullPage)),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed(pageViewSwiper);
+                },
+                child: const Text(pageViewSwiper)),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed(pageViewKeepAlive);
+                },
+                child: const Text(pageViewKeepAlive)),
           ],
         ),
       ),

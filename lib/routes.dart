@@ -6,6 +6,7 @@ import 'package:flutter_demo/pages/pageViewBuild.dart';
 import 'package:flutter_demo/pages/pageViewFullPage.dart';
 import 'package:flutter_demo/pages/pageViewKeepAlive.dart';
 import 'package:flutter_demo/pages/pageViewSwiper.dart';
+import './pages/keyWidgetPage.dart';
 
 import './pages/tabs_float_action_button.dart';
 import './pages/search.dart';
@@ -24,6 +25,7 @@ const pageViewBuild = "pageViewBuild";
 const pageViewFullPage = "pageViewFullPage";
 const pageViewSwiper = "pageViewSwiper";
 const pageViewKeepAlive = "pageViewKeepAlive";
+const keyWidgetPage = "keyWidgetPage";
 
 
 Map<String, WidgetBuilder> routes = {
@@ -41,6 +43,7 @@ Map<String, WidgetBuilder> routes = {
   pageViewFullPage:(context) => const PageViewFullPage(),
   pageViewSwiper:(context) => PageViewSwiper(),
   pageViewKeepAlive:(context) => PageViewKeepAlive(),
+  keyWidgetPage:(context) => KeyWidgetPage(),
 
 };
 

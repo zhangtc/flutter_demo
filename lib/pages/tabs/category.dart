@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../search.dart';
 import '../form.dart';
 import '../news.dart';
+import '../../routes.dart';
 
 class Category extends StatefulWidget {
   const Category({super.key});
@@ -52,13 +53,21 @@ class _CategoryState extends State<Category> {
             onPressed: () {
               Navigator.of(context)
                   .push(MaterialPageRoute(builder: (BuildContext context) {
-                return  NewsPages(
+                return NewsPages(
                   title: "最新新闻报道",
                   arguments: const {"aid": 8899},
                 );
               }));
             },
-            child: const Text("News"))
+            child: const Text("News")),
+        const SizedBox(
+          height: 20,
+        ),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, keyWidgetPage);
+            },
+            child: const Text(keyWidgetPage)),
       ],
     );
   }

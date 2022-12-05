@@ -7,6 +7,7 @@ import 'package:flutter_demo/pages/pageViewFullPage.dart';
 import 'package:flutter_demo/pages/pageViewKeepAlive.dart';
 import 'package:flutter_demo/pages/pageViewSwiper.dart';
 import './pages/keyWidgetPage.dart';
+import './pages/animatedListPage.dart';
 
 import './pages/tabs_float_action_button.dart';
 import './pages/search.dart';
@@ -26,6 +27,7 @@ const pageViewFullPage = "pageViewFullPage";
 const pageViewSwiper = "pageViewSwiper";
 const pageViewKeepAlive = "pageViewKeepAlive";
 const keyWidgetPage = "keyWidgetPage";
+const animatedListPage = "animatedListPage";
 
 
 Map<String, WidgetBuilder> routes = {
@@ -41,14 +43,15 @@ Map<String, WidgetBuilder> routes = {
   pageView:(context) => const PageViewPage(),
   pageViewBuild:(context) => const PageViewBuilderPage(),
   pageViewFullPage:(context) => const PageViewFullPage(),
-  pageViewSwiper:(context) => PageViewSwiper(),
-  pageViewKeepAlive:(context) => PageViewKeepAlive(),
-  keyWidgetPage:(context) => KeyWidgetPage(),
+  pageViewSwiper:(context) => const PageViewSwiper(),
+  pageViewKeepAlive:(context) => const PageViewKeepAlive(),
+  keyWidgetPage:(context) => const KeyWidgetPage(),
+  animatedListPage:(context) => const AnimatedListPage(),
 
 };
 
 var onGenerateRoute = (RouteSettings settings) {
-  print("settings: ${settings}");
+  print("settings: $settings");
   print("settings.name: ${settings.name}");
   print("settings.arguments: ${settings.arguments}");
 

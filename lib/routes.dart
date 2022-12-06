@@ -8,6 +8,7 @@ import 'package:flutter_demo/pages/pageViewKeepAlive.dart';
 import 'package:flutter_demo/pages/pageViewSwiper.dart';
 import './pages/keyWidgetPage.dart';
 import './pages/animatedListPage.dart';
+import './pages/animatedPage.dart';
 
 import './pages/tabs_float_action_button.dart';
 import './pages/search.dart';
@@ -28,6 +29,7 @@ const pageViewSwiper = "pageViewSwiper";
 const pageViewKeepAlive = "pageViewKeepAlive";
 const keyWidgetPage = "keyWidgetPage";
 const animatedListPage = "animatedListPage";
+const animatedContainerPage = "animatedContainerPage";
 
 
 Map<String, WidgetBuilder> routes = {
@@ -47,6 +49,7 @@ Map<String, WidgetBuilder> routes = {
   pageViewKeepAlive:(context) => const PageViewKeepAlive(),
   keyWidgetPage:(context) => const KeyWidgetPage(),
   animatedListPage:(context) => const AnimatedListPage(),
+  animatedContainerPage:(context) => const AnimatedContainerPage(),
 
 };
 

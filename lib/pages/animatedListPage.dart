@@ -37,6 +37,7 @@ class _AnimatedListPageState extends State<AnimatedListPage> {
         );
       });
 
+      //延时设计
       Timer.periodic(const Duration(milliseconds: 300), (timer) {
         flag = true;
         timer.cancel();

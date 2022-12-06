@@ -76,6 +76,15 @@ class _CategoryState extends State<Category> {
               Navigator.pushNamed(context, animatedListPage);
             },
             child: const Text(animatedListPage)),
+
+         const SizedBox(
+          height: 20,
+        ),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, animatedContainerPage);
+            },
+            child: const Text(animatedContainerPage)),    
       ],
     );
   }

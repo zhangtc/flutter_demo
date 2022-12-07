@@ -21,3 +21,8 @@ List listData = [
   {"title": "title", "author": "author", "imageUrl": imagesUrl1},
   {"title": "title", "author": "author", "imageUrl": imagesUrl2},
 ];
+
+List<String> images = [
+    "images/b1.jpeg","images/b2.jpeg","images/b3.jpeg","images/b4.jpeg","images/b5.jpeg","images/b6.jpeg","images/b7.jpeg",
+];
+

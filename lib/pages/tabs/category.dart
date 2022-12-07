@@ -17,11 +17,11 @@ class _CategoryState extends State<Category> {
     return Column(
       children: [
         const SizedBox(
-          height: 20,
+          height: 10,
         ),
         const Center(child: Text("Category")),
         const SizedBox(
-          height: 20,
+          height: 10,
         ),
         ElevatedButton(
           onPressed: () {
@@ -36,7 +36,7 @@ class _CategoryState extends State<Category> {
           child: const Text("搜索"),
         ),
         const SizedBox(
-          height: 20,
+          height: 10,
         ),
         ElevatedButton(
             onPressed: () {
@@ -47,7 +47,7 @@ class _CategoryState extends State<Category> {
             },
             child: const Text("From")),
         const SizedBox(
-          height: 20,
+          height: 10,
         ),
         ElevatedButton(
             onPressed: () {
@@ -61,7 +61,7 @@ class _CategoryState extends State<Category> {
             },
             child: const Text("News")),
         const SizedBox(
-          height: 20,
+          height: 10,
         ),
         ElevatedButton(
             onPressed: () {
@@ -69,22 +69,54 @@ class _CategoryState extends State<Category> {
             },
             child: const Text(keyWidgetPage)),
         const SizedBox(
-          height: 20,
+          height: 10,
         ),
         ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, animatedListPage);
             },
             child: const Text(animatedListPage)),
-
-         const SizedBox(
-          height: 20,
+        const SizedBox(
+          height: 10,
         ),
         ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, animatedContainerPage);
             },
-            child: const Text(animatedContainerPage)),    
+            child: const Text(animatedContainerPage)),
+        const SizedBox(
+          height: 10,
+        ),
+        InkWell(
+          //点击事件
+          onTap: () {
+            Navigator.pushNamed(context, hero, arguments: {
+              "url": "images/a.jpeg",
+            });
+          },
+          child: Container(
+            width: 200,
+            height: 100,
+            color: Colors.yellow,
+            child: Hero(
+                tag: "images/a.jpeg",
+                child: Image.asset(
+                  "images/a.jpeg",
+                  fit: BoxFit.cover,
+                )),
+          ),
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, photoViewPage);
+            },
+            child: const Text(photoViewPage)),
+        const SizedBox(
+          height: 10,
+        ),
       ],
     );
   }

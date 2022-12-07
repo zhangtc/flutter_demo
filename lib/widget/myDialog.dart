@@ -35,7 +35,7 @@ class MyDialog extends Dialog {
                     ),
                     Align(
                         alignment: Alignment.centerRight,
-                        child: InkWell(
+                        child: InkWell(//点击事件
                           onTap: onTap,
                           child: const Icon(Icons.close),
                         ))

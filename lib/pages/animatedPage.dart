@@ -105,7 +105,7 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
                   ),
                 ),
               ),
-              GestureDetector(
+              GestureDetector(//手势事件
                 onTap: () {
                   setState(() {
                     paddingFlag = !paddingFlag;
@@ -123,7 +123,7 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
                   ),
                 ),
               ),
-              GestureDetector(
+              GestureDetector(//手势事件
                 onTap: () {
                   setState(() {
                     opacityFlag = !opacityFlag;

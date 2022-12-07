@@ -1,14 +1,17 @@
 // import 'package:flutter/material.dart';
 //应用ios风格的路由
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_demo/pages/hero.dart';
 import 'package:flutter_demo/pages/pageView.dart';
 import 'package:flutter_demo/pages/pageViewBuild.dart';
 import 'package:flutter_demo/pages/pageViewFullPage.dart';
 import 'package:flutter_demo/pages/pageViewKeepAlive.dart';
 import 'package:flutter_demo/pages/pageViewSwiper.dart';
+import 'package:flutter_demo/pages/photoView.dart';
 import './pages/keyWidgetPage.dart';
 import './pages/animatedListPage.dart';
 import './pages/animatedPage.dart';
+import './pages/photoViewGalleryPage.dart';
 
 import './pages/tabs_float_action_button.dart';
 import './pages/search.dart';
@@ -30,6 +33,9 @@ const pageViewKeepAlive = "pageViewKeepAlive";
 const keyWidgetPage = "keyWidgetPage";
 const animatedListPage = "animatedListPage";
 const animatedContainerPage = "animatedContainerPage";
+const hero="heroPage";
+const photoViewPage="photoViewPage";
+const photoViewGalleryPage="photoViewGalleryPage";
 
 
 Map<String, WidgetBuilder> routes = {
@@ -50,6 +56,9 @@ Map<String, WidgetBuilder> routes = {
   keyWidgetPage:(context) => const KeyWidgetPage(),
   animatedListPage:(context) => const AnimatedListPage(),
   animatedContainerPage:(context) => const AnimatedContainerPage(),
+  hero:(context,{arguments}) =>  HeroPage(arguments: arguments),
+  photoViewPage:(context) =>  const PhotoViewPage(),
+  photoViewGalleryPage:(context,{arguments}) =>  PhotoViewGalleryPage(arguments: arguments),
 
 };
 

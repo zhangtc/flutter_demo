@@ -12,30 +12,36 @@ import './pages/keyWidgetPage.dart';
 import './pages/animatedListPage.dart';
 import './pages/animatedPage.dart';
 import './pages/photoViewGalleryPage.dart';
+import 'pages/getXPage.dart';
 
 import './pages/tabs_float_action_button.dart';
 import './pages/search.dart';
 import './pages/form.dart';
 import './pages/news.dart';
 import './dialog.dart';
+import 'pages/getXRouteBack.dart';
 
 
 const rootPage = "/";
-const search = "search";
-const form = "form";
-const news = "news";
-const dialog = "dialog";
-const pageView = "pageView";
-const pageViewBuild = "pageViewBuild";
-const pageViewFullPage = "pageViewFullPage";
-const pageViewSwiper = "pageViewSwiper";
-const pageViewKeepAlive = "pageViewKeepAlive";
-const keyWidgetPage = "keyWidgetPage";
-const animatedListPage = "animatedListPage";
-const animatedContainerPage = "animatedContainerPage";
-const hero="heroPage";
-const photoViewPage="photoViewPage";
-const photoViewGalleryPage="photoViewGalleryPage";
+const search = "/search";
+const form = "/form";
+const news = "/news";
+const dialog = "/dialog";
+const pageView = "/pageView";
+const pageViewBuild = "/pageViewBuild";
+const pageViewFullPage = "/pageViewFullPage";
+const pageViewSwiper = "/pageViewSwiper";
+const pageViewKeepAlive = "/pageViewKeepAlive";
+const keyWidgetPage = "/keyWidgetPage";
+const animatedListPage = "/animatedListPage";
+const animatedContainerPage = "/animatedContainerPage";
+const hero="/heroPage";
+const photoViewPage="/photoViewPage";
+const photoViewGalleryPage="/photoViewGalleryPage";
+const getXPage="/GetXPage";
+const getXRoute="/GetXRoute";
+const getXRouteBack="/GetXRouteBack";
+
 
 
 Map<String, WidgetBuilder> routes = {
@@ -59,6 +65,8 @@ Map<String, WidgetBuilder> routes = {
   hero:(context,{arguments}) =>  HeroPage(arguments: arguments),
   photoViewPage:(context) =>  const PhotoViewPage(),
   photoViewGalleryPage:(context,{arguments}) =>  PhotoViewGalleryPage(arguments: arguments),
+  getXPage:(context) =>  const GetXPage(),
+  getXRouteBack:(context) =>  const GetXRouteBack(),
 
 };
 
